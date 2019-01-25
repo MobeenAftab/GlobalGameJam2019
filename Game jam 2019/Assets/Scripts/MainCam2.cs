@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ProCam : MonoBehaviour {
+public class MainCam2 : MonoBehaviour {
 
 	public Transform pos;
 
