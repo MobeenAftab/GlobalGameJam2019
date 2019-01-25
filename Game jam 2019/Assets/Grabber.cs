@@ -9,11 +9,13 @@ public class Grabber : MonoBehaviour
     public HingeJoint joint;
 
     Collision collision;
+    Rigidbody rb;
 
     void Start()
     {
         grabbing = false;
         joint = GetComponent<HingeJoint>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -30,7 +32,7 @@ public class Grabber : MonoBehaviour
             {
                 if(joint.connectedBody != null)
                 {
-                    joint.connectedBody.AddForce(100.0f * joint.connectedBody.velocity);
+                    joint.connectedBody.AddForce(100.0f * rb.velocity);
                 }
 
                 Destroy(joint);
@@ -44,6 +46,7 @@ public class Grabber : MonoBehaviour
                 gameObject.AddComponent<HingeJoint>();
                 joint = GetComponent<HingeJoint>();
                 joint.connectedBody = collision.rigidbody;
+                joint.enableCollision = false;
             }
         }
     }
