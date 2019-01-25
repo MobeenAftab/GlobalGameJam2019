@@ -28,6 +28,11 @@ public class Grabber : MonoBehaviour
             grabbing = false;
             if(joint != null)
             {
+                if(joint.connectedBody != null)
+                {
+                    joint.connectedBody.AddForce(100.0f * joint.connectedBody.velocity);
+                }
+
                 Destroy(joint);
             }
         }
