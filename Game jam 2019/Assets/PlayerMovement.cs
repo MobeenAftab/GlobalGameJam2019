@@ -15,24 +15,21 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        //ArrowMovement();
-        ForceMovement();
+        ArrowMovement();
     }
 
     /// <summary>
-    /// Move the object using forces, constant ammount of force applied during transition
+    /// Move the object using forces, the longer the press the greater the force applied
+    /// Must freeze x,y,z ridgidbody rotation for this to work
     /// </summary>
     private void ForceMovement()
     {
-        //Use GetAxisRaw instead of GetAxis because GetAxis is smoothed and causes overshooting when moving
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
-        if (moveX != 0 || moveY != 0)
-        {
-            Vector3 movement = (new Vector3(moveX, 0, moveY)).normalized * speed * Time.deltaTime;
-            rb.MovePosition(transform.position + transform.TransformDirection(movement));
-        }
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+        rb.AddForce(movement * speed);
     }
 
     /// <summary>
