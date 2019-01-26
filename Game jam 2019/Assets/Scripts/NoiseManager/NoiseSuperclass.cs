@@ -9,6 +9,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NoiseSuperclass : MonoBehaviour
 {
@@ -16,11 +17,14 @@ public class NoiseSuperclass : MonoBehaviour
     private bool isCollision = false;
 
     public NoiseManager noiseM;
+   
 
     void Start()
     {
         noiseM = GameObject.Find("NoiseManager").GetComponent<NoiseManager>();
         Debug.Log("YEYEY: " + noiseM.noiseLevel);
+      
+        
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -33,11 +37,12 @@ public class NoiseSuperclass : MonoBehaviour
     /// <summary>
     /// Reduce the noise level every second or so
     /// </summary>
-    void FixedUpdate()
+
+    void Update()
     {
+
+
     }
-
-
 
 
 }
