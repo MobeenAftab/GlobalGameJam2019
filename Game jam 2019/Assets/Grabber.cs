@@ -28,11 +28,15 @@ public class Grabber : MonoBehaviour
         else
         {
             grabbing = false;
-            if(joint != null)
+            if (joint != null)
             {
-                if(joint.connectedBody != null)
+                if (joint.connectedBody != null)
                 {
-                    joint.connectedBody.AddForce(100.0f * rb.velocity);
+                    Vector3 throwDirection = joint.connectedBody.transform.position - transform.position;
+                    throwDirection.Normalize();
+                    joint.connectedBody.AddForce(300.0f * throwDirection);
+
+
                 }
 
                 Destroy(joint);
@@ -43,10 +47,16 @@ public class Grabber : MonoBehaviour
         {
             if (joint == null)
             {
-                gameObject.AddComponent<HingeJoint>();
-                joint = GetComponent<HingeJoint>();
-                joint.connectedBody = collision.rigidbody;
-                joint.enableCollision = false;
+                if (collision != null)
+                {
+                    if (collision.rigidbody != null && 
+                        (collision.rigidbody.transform.position - transform.position).magnitude < 3.0f)
+                    {
+                        gameObject.AddComponent<HingeJoint>();
+                        joint = GetComponent<HingeJoint>();
+                        joint.connectedBody = collision.rigidbody;
+                    }
+                }
             }
         }
     }

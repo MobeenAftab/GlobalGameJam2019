@@ -5,12 +5,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
+    public Rigidbody mainBody;
+    private Rigidbody handRB;
 
-    private Rigidbody rb;
+    private float moveForce = 200.0f;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        handRB = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
@@ -24,14 +26,28 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     private void ForceMovement()
     {
-        //Use GetAxisRaw instead of GetAxis because GetAxis is smoothed and causes overshooting when moving
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        if (Input.GetButton("Jump") && GetComponent<HingeJoint>() == null)
+        {
+            Vector3 moveDir = handRB.transform.position - mainBody.transform.position;
+            if(moveDir.magnitude > 2.0f)
+            {
+                moveDir.Normalize();
+                mainBody.AddForce(moveDir * moveForce);
+            }
+            
+        }else
+        {
+            //Use GetAxisRaw instead of GetAxis because GetAxis is smoothed and causes overshooting when moving
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
 
-        if (moveX != 0 || moveY != 0) {
-            Vector3 movement = (new Vector3(moveX, 0, moveY)).normalized * speed * Time.deltaTime;
-            rb.MovePosition(transform.position + transform.TransformDirection(movement));
+            if (moveX != 0 || moveY != 0)
+            {
+                Vector3 movement = (new Vector3(moveX, 0, moveY)).normalized * speed * Time.deltaTime;
+                handRB.MovePosition(transform.position + transform.TransformDirection(movement));
+            }
         }
+
     }
 
     /// <summary>
