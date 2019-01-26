@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 2845463277952322103}
   - component: {fileID: 2845463277952322088}
   - component: {fileID: 2845463277952322101}
-  - component: {fileID: 2845463277952322100}
   - component: {fileID: 1693150893}
-  - component: {fileID: 1693150894}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -93,7 +91,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2845463277952322089}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86ea1510936b7b146b31548f0cc8cb04, type: 3}
   m_Name: 
@@ -102,21 +100,6 @@ MonoBehaviour:
   offset: {x: 0, y: 1, z: -5}
   offsetRight: 10
   offsetUp: 15
---- !u!114 &2845463277952322100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2845463277952322089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af64482ed65f4e644bfc042133306782, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pos: {fileID: 0}
-  smoothSpeed: 0.125
-  offset: {x: 0, y: 15, z: -15}
 --- !u!82 &1693150893
 AudioSource:
   m_ObjectHideFlags: 0
@@ -213,18 +196,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1693150894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2845463277952322089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37b1b8b28bbb93346879c536bd9078af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intro: {fileID: 8300000, guid: 8c320e1bedc2e08498fd7dcdcebe16d5, type: 3}
-  source: {fileID: 1693150893}
-  loop: {fileID: 8300000, guid: 7498f216a970c474087e6b72003d63b7, type: 3}
