@@ -22,7 +22,7 @@ public class Grabber : MonoBehaviour
     void Update()
     {
         //Only grab stuff when player is holding button
-        if (input.leftTrigger)
+        if (input.leftTrigger || input.rightTrigger)
         {
             grabbing = true;
         }
@@ -50,8 +50,9 @@ public class Grabber : MonoBehaviour
             {
                 if (collision != null)
                 {
-                    if (collision.rigidbody != null && 
-                        (collision.rigidbody.transform.position - transform.position).magnitude < 3.0f)
+                    if (collision.rigidbody != null &&
+                        ((collision.rigidbody.transform.position - transform.position).magnitude < 3.0f
+                        || collision.gameObject.CompareTag("Level")))
                     {
                         gameObject.AddComponent<HingeJoint>();
                         joint = GetComponent<HingeJoint>();

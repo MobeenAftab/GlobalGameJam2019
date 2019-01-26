@@ -8,6 +8,7 @@ public class MainCam : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		transform.position = playerPos.position + offset;
-	}
+        transform.forward = -1 * playerPos.right;
+        transform.position = playerPos.position + playerPos.right * 5.0f + playerPos.up * 3.0f;
+    }
 }
