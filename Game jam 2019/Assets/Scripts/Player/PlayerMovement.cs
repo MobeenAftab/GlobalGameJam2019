@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public Controls controllerinput;
 
-    private Rigidbody rb;
+    public float speed;
+    public Rigidbody mainBody;
+    private Rigidbody handRB;
+
+    private float moveForce = 500.0f;
+
+    public bool trigger;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        handRB = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
     {
-        // ArrowMovement();
         ForceMovement();
     }
 
@@ -24,36 +29,44 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     private void ForceMovement()
     {
-        //Use GetAxisRaw instead of GetAxis because GetAxis is smoothed and causes overshooting when moving
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        trigger = controllerinput.leftTrigger || controllerinput.rightTrigger;
+        HingeJoint joint = GetComponent<HingeJoint>();
+        if ( trigger 
+            && joint != null 
+            && joint.connectedBody != null 
+            && joint.connectedBody.gameObject.CompareTag("Level") )
+        {
+            Vector3 moveDir = handRB.transform.position - mainBody.transform.position;
+            //if(moveDir.magnitude > 0.0f)
+            //{
+                moveDir.Normalize();
+                mainBody.AddForce(moveDir * moveForce);
+            //}
+            
+        }else
+        {
+            //Use GetAxisRaw instead of GetAxis because GetAxis is smoothed and causes overshooting when moving
+            float moveX = 0.0f;
+            float moveY = 0.0f;
 
-        if (moveX != 0 || moveY != 0) {
-            Vector3 movement = (new Vector3(moveX, 0, moveY)).normalized * speed * Time.deltaTime;
-            rb.MovePosition(transform.position + transform.TransformDirection(movement));
-        }
-    }
+            if (controllerinput.playerController == Controls.Controller.Player1)
+            {
+                moveX = controllerinput.leftThumbStickY * -1;
+                moveY = controllerinput.leftThumbStickX;
+            }else
+            {
+                moveX = controllerinput.rightThumbStickY * -1;
+                moveY = controllerinput.rightThumbStickX;
+            }
 
-    /// <summary>
-    /// Move game object based on Transform position
-    /// </summary>
-    private void ArrowMovement()
-    {
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.position += Vector3.left * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.position += Vector3.right * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.position += Vector3.forward * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.position += Vector3.back * speed * Time.deltaTime;
+
+
+            if (moveX != 0 || moveY != 0)
+            {
+                Vector3 movement = (mainBody.transform.right * moveX + 
+                    mainBody.transform.forward * moveY).normalized * speed * Time.deltaTime;
+                handRB.MovePosition(transform.position + movement);
+            }
         }
     }
 }

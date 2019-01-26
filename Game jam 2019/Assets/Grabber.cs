@@ -7,6 +7,7 @@ public class Grabber : MonoBehaviour
 
     public bool grabbing;
     public HingeJoint joint;
+    public Controls input;
 
     Collision collision;
     Rigidbody rb;
@@ -21,18 +22,22 @@ public class Grabber : MonoBehaviour
     void Update()
     {
         //Only grab stuff when player is holding button
-        if (Input.GetButton("Jump"))
+        if (input.leftTrigger || input.rightTrigger)
         {
             grabbing = true;
         }
         else
         {
             grabbing = false;
-            if(joint != null)
+            if (joint != null)
             {
-                if(joint.connectedBody != null)
+                if (joint.connectedBody != null)
                 {
-                    joint.connectedBody.AddForce(100.0f * rb.velocity);
+                    Vector3 throwDirection = joint.connectedBody.transform.position - transform.position;
+                    throwDirection.Normalize();
+                    joint.connectedBody.AddForce(300.0f * throwDirection);
+
+
                 }
 
                 Destroy(joint);
@@ -43,10 +48,17 @@ public class Grabber : MonoBehaviour
         {
             if (joint == null)
             {
-                gameObject.AddComponent<HingeJoint>();
-                joint = GetComponent<HingeJoint>();
-                joint.connectedBody = collision.rigidbody;
-                joint.enableCollision = false;
+                if (collision != null)
+                {
+                    if (collision.rigidbody != null &&
+                        ((collision.rigidbody.transform.position - transform.position).magnitude < 3.0f
+                        || collision.gameObject.CompareTag("Level")))
+                    {
+                        gameObject.AddComponent<HingeJoint>();
+                        joint = GetComponent<HingeJoint>();
+                        joint.connectedBody = collision.rigidbody;
+                    }
+                }
             }
         }
     }
