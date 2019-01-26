@@ -93,7 +93,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2845463277952322089}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86ea1510936b7b146b31548f0cc8cb04, type: 3}
   m_Name: 
@@ -101,7 +101,7 @@ MonoBehaviour:
   playerPos: {fileID: 0}
   offset: {x: 0, y: 1, z: -5}
   offsetRight: 10
-  offsetUp: 5
+  offsetUp: 15
 --- !u!114 &2845463277952322100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,14 +109,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2845463277952322089}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af64482ed65f4e644bfc042133306782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pos: {fileID: 0}
   smoothSpeed: 0.125
-  offset: {x: 0, y: 1, z: -5}
+  offset: {x: 0, y: 15, z: -15}
 --- !u!82 &1693150893
 AudioSource:
   m_ObjectHideFlags: 0
