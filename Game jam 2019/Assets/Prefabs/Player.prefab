@@ -53,6 +53,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1310270926485475600}
+  - component: {fileID: 9007314658662530862}
+  - component: {fileID: 3286950277060410244}
+  - component: {fileID: 6068365065895914119}
+  - component: {fileID: 4554530819071012681}
+  - component: {fileID: 3045540408413316734}
+  - component: {fileID: 9186253012880450656}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -69,6 +75,7 @@ Transform:
   m_GameObject: {fileID: 3045540408413316733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5974581767470143636}
@@ -112,6 +119,7 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3851797572082999384
+
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,12 +128,14 @@ MeshFilter:
   m_GameObject: {fileID: 6576009381542116473}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &8331463267425712812
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6576009381542116473}
+
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -158,6 +168,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!65 &3879758827817725979
 BoxCollider:
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -170,6 +181,7 @@ BoxCollider:
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1421400484978001524
+
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,6 +199,7 @@ Rigidbody:
   m_CollisionDetection: 0
 --- !u!114 &6180244338752752324
 MonoBehaviour:
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -198,3 +211,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+=======
+  m_GameObject: {fileID: 3045540408413316733}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: -0.2, y: 0.3, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Spring: 100
+  m_Damper: 0.2
+  m_MinDistance: 0.5
+  m_MaxDistance: 1
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 1
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!145 &9186253012880450656
