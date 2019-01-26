@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 88dbd488b6297064db7758c3571dcff7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Book002
+    100002: Book003
+    100004: Book004
+    100006: Book005
+    100008: Book006
+    100010: Book007
+    100012: Book008
+    100014: Book009
+    100016: Book010
+    100018: Book011
+    100020: Book012
+    100022: Book013
+    100024: Book014
+    100026: Book015
+    100028: Book016
+    100030: Book017
+    100032: Book1
+    100034: //RootNode
+    100036: Box001
+    100038: L-Ext001
+    100040: L-Ext002
+    100042: L-Ext003
+    100044: L-Ext004
+    100046: Torus Knot001
+    400000: Book002
+    400002: Book003
+    400004: Book004
+    400006: Book005
+    400008: Book006
+    400010: Book007
+    400012: Book008
+    400014: Book009
+    400016: Book010
+    400018: Book011
+    400020: Book012
+    400022: Book013
+    400024: Book014
+    400026: Book015
+    400028: Book016
+    400030: Book017
+    400032: Book1
+    400034: //RootNode
+    400036: Box001
+    400038: L-Ext001
+    400040: L-Ext002
+    400042: L-Ext003
+    400044: L-Ext004
+    400046: Torus Knot001
+    2100000: No Name
+    2300000: Book002
+    2300002: Book003
+    2300004: Book004
+    2300006: Book005
+    2300008: Book006
+    2300010: Book007
+    2300012: Book008
+    2300014: Book009
+    2300016: Book010
+    2300018: Book011
+    2300020: Book012
+    2300022: Book013
+    2300024: Book014
+    2300026: Book015
+    2300028: Book016
+    2300030: Book017
+    2300032: Book1
+    2300034: Box001
+    2300036: L-Ext001
+    2300038: L-Ext002
+    2300040: L-Ext003
+    2300042: L-Ext004
+    2300044: Torus Knot001
+    3300000: Book002
+    3300002: Book003
+    3300004: Book004
+    3300006: Book005
+    3300008: Book006
+    3300010: Book007
+    3300012: Book008
+    3300014: Book009
+    3300016: Book010
+    3300018: Book011
+    3300020: Book012
+    3300022: Book013
+    3300024: Book014
+    3300026: Book015
+    3300028: Book016
+    3300030: Book017
+    3300032: Book1
+    3300034: Box001
+    3300036: L-Ext001
+    3300038: L-Ext002
+    3300040: L-Ext003
+    3300042: L-Ext004
+    3300044: Torus Knot001
+    4300000: Box001
+    4300002: Book1
+    4300004: Book002
+    4300006: Book003
+    4300008: Book004
+    4300010: Book005
+    4300012: Book006
+    4300014: Book007
+    4300016: Book008
+    4300018: Book009
+    4300020: Book010
+    4300022: Book011
+    4300024: Book012
+    4300026: Book013
+    4300028: Book014
+    4300030: Book015
+    4300032: Book016
+    4300034: Book017
+    4300036: L-Ext001
+    4300038: L-Ext002
+    4300040: L-Ext003
+    4300042: L-Ext004
+    4300044: Torus Knot001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
