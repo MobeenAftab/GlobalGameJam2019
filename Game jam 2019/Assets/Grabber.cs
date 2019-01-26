@@ -7,6 +7,7 @@ public class Grabber : MonoBehaviour
 
     public bool grabbing;
     public HingeJoint joint;
+    public Controls input;
 
     Collision collision;
     Rigidbody rb;
@@ -21,7 +22,7 @@ public class Grabber : MonoBehaviour
     void Update()
     {
         //Only grab stuff when player is holding button
-        if (Input.GetButton("Jump"))
+        if (input.leftTrigger)
         {
             grabbing = true;
         }
