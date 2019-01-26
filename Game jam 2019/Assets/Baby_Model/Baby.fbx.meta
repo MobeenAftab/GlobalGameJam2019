@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b061fe81729390d44812175486054943
+guid: b8a79094ae452dd4384bc63bb767af19
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -55,10 +55,10 @@ ModelImporter:
     100098: Rthumb
     100100: Rthumb_end
     100102: Baby_Rig
-    100104: ShoulderLroot
-    100106: ShoulderRroot
-    100108: HipL
-    100110: HipR
+    100104: HipL
+    100106: HipR
+    100108: ShoulderLroot
+    100110: ShoulderRroot
     400000: //RootNode
     400002: Baby_Merge
     400004: BabyArmature
@@ -111,10 +111,10 @@ ModelImporter:
     400098: Rthumb
     400100: Rthumb_end
     400102: Baby_Rig
-    400104: ShoulderLroot
-    400106: ShoulderRroot
-    400108: HipL
-    400110: HipR
+    400104: HipL
+    400106: HipR
+    400108: ShoulderLroot
+    400110: ShoulderRroot
     2100000: Baby
     2100002: Eye
     4300000: Baby_Merge
@@ -122,7 +122,6 @@ ModelImporter:
     9500000: //RootNode
     13700000: Baby_Merge
     13700002: Baby_Rig
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
