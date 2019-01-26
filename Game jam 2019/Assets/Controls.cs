@@ -39,7 +39,14 @@ public class Controls : MonoBehaviour
 
     void FixedUpdate()
     {
-        GamePad.SetVibration(playerIndex, state.Triggers.Left, state.Triggers.Right);
+        if(playerController == Controller.Player1)
+        {
+            GamePad.SetVibration((PlayerIndex)0, state.Triggers.Left, 0);
+        }
+        else
+        {
+            GamePad.SetVibration((PlayerIndex)1, 0, state.Triggers.Right);
+        }
     }
 
     // Update is called once per frame
@@ -50,7 +57,7 @@ public class Controls : MonoBehaviour
         GamePadState testState = GamePad.GetState(testPlayerIndex);
         if (testState.IsConnected)
         {
-            Debug.Log(string.Format("GamePad found {0}", testPlayerIndex));
+          //  Debug.Log(string.Format("GamePad found {0}", testPlayerIndex));
             playerIndex = testPlayerIndex;
             playerIndexSet = true;
         }
