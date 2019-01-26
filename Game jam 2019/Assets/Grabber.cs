@@ -35,7 +35,7 @@ public class Grabber : MonoBehaviour
                 {
                     Vector3 throwDirection = joint.connectedBody.transform.position - transform.position;
                     throwDirection.Normalize();
-                    joint.connectedBody.AddForce(300.0f * throwDirection);
+                    joint.connectedBody.AddForce(50.0f * throwDirection);
 
 
                 }

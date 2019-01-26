@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody mainBody;
     private Rigidbody handRB;
 
-    private float moveForce = 500.0f;
+    private float moveForce = 1000.0f;
 
     public bool trigger;
 
