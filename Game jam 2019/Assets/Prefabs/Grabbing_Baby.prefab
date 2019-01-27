@@ -264,8 +264,8 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.49999994, y: -1.2900007, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 5000
-    damper: 100000
+    spring: 0
+    damper: 0
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -409,8 +409,8 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.0400002, y: 0, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 5000
-    damper: 100000
+    spring: 0
+    damper: 0
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -608,8 +608,8 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.49999994, y: -1.01, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 5000
-    damper: 100000
+    spring: 0
+    damper: 0
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -753,8 +753,8 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.100000024, y: 0, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 5000
-    damper: 100000
+    spring: 0
+    damper: 0
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -972,10 +972,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3388124510151780363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1a2f50ccbb06d43bb06bc30ae864be, type: 3}
+  m_Script: {fileID: 11500000, guid: 087fbeb886674e64d90d0e37bdb442f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherTransform: {fileID: 3388124508651240292}
+  otherTransform: {fileID: 0}
 --- !u!1 &3388124510151780365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3388124510151780369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1a2f50ccbb06d43bb06bc30ae864be, type: 3}
+  m_Script: {fileID: 11500000, guid: 087fbeb886674e64d90d0e37bdb442f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   otherTransform: {fileID: 3388124509026832719}
@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3388124510151780389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1a2f50ccbb06d43bb06bc30ae864be, type: 3}
+  m_Script: {fileID: 11500000, guid: 087fbeb886674e64d90d0e37bdb442f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   otherTransform: {fileID: 821286666872704565}
@@ -1880,7 +1880,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3388124510151780419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1a2f50ccbb06d43bb06bc30ae864be, type: 3}
+  m_Script: {fileID: 11500000, guid: 087fbeb886674e64d90d0e37bdb442f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   otherTransform: {fileID: 5654069808505991731}
@@ -2448,8 +2448,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b061fe81729390d44812175486054943, type: 3}
-  - {fileID: 2100002, guid: b061fe81729390d44812175486054943, type: 3}
+  - {fileID: 2100000, guid: eaf54caa466006049bd0754b60da1800, type: 2}
+  - {fileID: 2100000, guid: 97327ff6bad9e924a9e19159c905e783, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2473,7 +2473,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300002, guid: b061fe81729390d44812175486054943, type: 3}
+  m_Mesh: {fileID: 4300002, guid: b8a79094ae452dd4384bc63bb767af19, type: 3}
   m_Bones:
   - {fileID: 3388124510151750775}
   - {fileID: 3388124510151750753}
@@ -3372,7 +3372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6216018655727043424}
   m_Layer: 0
-  m_Name: Grabbing_Player
+  m_Name: Grabbing_Baby
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3389,8 +3389,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6216018656221103343}
   - {fileID: 6216018656709686786}
+  - {fileID: 6216018656221103343}
   - {fileID: 3388124508819392138}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -3429,7 +3429,7 @@ Transform:
   - {fileID: 5654069808723333633}
   - {fileID: 5654069808681882145}
   m_Father: {fileID: 6216018655727043424}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -10.55, z: 0}
 --- !u!114 &3388124508687253689
 MonoBehaviour:
@@ -3484,7 +3484,7 @@ Transform:
   m_Children:
   - {fileID: 3388124510151750769}
   m_Father: {fileID: 6216018655727043424}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6216018656709686787
 MeshFilter:
