@@ -15,6 +15,7 @@ public class NoiseManager : MonoBehaviour
     public float noiseLevel = 0.0f;
     public Slider fun;
     public Slider Noise;
+    private float max = 300;
 
     // Start is called before the first frame update
     void Awake()
@@ -23,6 +24,7 @@ public class NoiseManager : MonoBehaviour
         
         //StartCoroutine("LoseTime");
         fun.value = 1.0f;
+        fun.maxValue = max;
     }
 
     // Update is called once per frame
@@ -42,7 +44,7 @@ public class NoiseManager : MonoBehaviour
 
     private void CheckNoiseLevel()
     {
-        if (noiseLevel > 300.0f)
+        if (noiseLevel > max)
         {
             Debug.Log("Noise Level Is To Highh!" + noiseLevel);
             SceneManager.LoadScene(3);
