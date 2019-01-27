@@ -13,7 +13,7 @@ using UnityEngine.UI;
 
 public class NoiseSuperclass : MonoBehaviour
 {
-    public float NoiseInc { get; set; } = 5.0f;
+    public float NoiseInc  = 5.0f;
 
     public NoiseManager noiseM;   
 
