@@ -25,7 +25,11 @@ public class BeepBabyMonitor : MonoBehaviour
     // Update is called once per frame
    void OnTriggerEnter(Collider sCollider)
     {
-        playerProxy = true;
+        if (sCollider.CompareTag("Player"))
+        {
+            playerProxy = true;
+        }
+
 
         StartCoroutine(Beeper());
         //Debug.Log("AAAAAAA");
