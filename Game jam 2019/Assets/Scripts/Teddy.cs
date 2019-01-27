@@ -24,6 +24,7 @@ public class Teddy : MonoBehaviour
         {
             case "Player":
                 print("Teddy on Player");
+                WinGame();
                 break;
             case "Finish":
                 // Teddy is in chest area
