@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 3338016752740222861}
   - component: {fileID: 4962933631995222466}
   m_Layer: 0
-  m_Name: SgtTed
+  m_Name: SgtTed(Connor)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -502,7 +502,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4435232797285190509}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a354ed14dc289ce4f997ff053e08748b, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 19f809cdf236c7040bc75670c8804a43, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
