@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3110692542010451232}
   - component: {fileID: 3110692541996626944}
+  - component: {fileID: 7549349411938670652}
   m_Layer: 0
   m_Name: ArmyOutfit
   m_TagString: Untagged
@@ -91,6 +92,20 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0002678493, y: 0.011610918, z: -0.0010076817}
     m_Extent: {x: 0.009140459, y: 0.016648911, z: 0.0073913857}
   m_DirtyAABB: 0
+--- !u!64 &7549349411938670652
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110692542010292480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: efb56fd981df1e9449925440dd660031, type: 3}
 --- !u!1 &3110692542010292482
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3110692542010451262}
   - component: {fileID: 3110692541996626946}
+  - component: {fileID: 2938144216845792720}
   m_Layer: 0
   m_Name: SgtTed
   m_TagString: Untagged
@@ -615,6 +631,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.0059052464, z: 0.0011686208}
     m_Extent: {x: 0.016106298, y: 0.01901427, z: 0.0069026006}
   m_DirtyAABB: 0
+--- !u!64 &2938144216845792720
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110692542010292510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 19f809cdf236c7040bc75670c8804a43, type: 3}
 --- !u!1 &3110692542010292576
 GameObject:
   m_ObjectHideFlags: 0

@@ -261,7 +261,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.006, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00003287934, y: 0.00021134419, z: -0.00003247225}
+  m_ConnectedAnchor: {x: -0.00003287968, y: 0.0002113523, z: -0.000032474967}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -767,7 +767,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.006, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00003287824, y: 0.00021134225, z: -0.000032476637}
+  m_ConnectedAnchor: {x: 0.0000328784, y: 0.00021133905, z: -0.000032475644}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1410,7 +1410,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.0035, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0003546385, y: -0.0021189898, z: -0.00008240361}
+  m_ConnectedAnchor: {x: -0.00035463856, y: -0.0021189952, z: -0.00008240416}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1564,7 +1564,7 @@ HingeJoint:
   m_Anchor: {x: 0.006, y: -0.004, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.012277189, y: -0.005643484, z: 0.0018169454}
+  m_ConnectedAnchor: {x: 0.012277189, y: -0.005643481, z: 0.0018169428}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1627,7 +1627,7 @@ HingeJoint:
   m_Anchor: {x: -0.006, y: -0.004, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.012277184, y: -0.0056434884, z: 0.0018169587}
+  m_ConnectedAnchor: {x: -0.012277183, y: -0.005643485, z: 0.0018169577}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1662,7 +1662,7 @@ HingeJoint:
   m_Anchor: {x: 0.004, y: 0.015, z: -0.002}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0002868621, y: 0.0023420101, z: 0.009547231}
+  m_ConnectedAnchor: {x: -0.0002868641, y: 0.0023420167, z: 0.009547231}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1697,7 +1697,7 @@ HingeJoint:
   m_Anchor: {x: -0.004, y: 0.015, z: -0.002}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0053381287, y: 0.0017287466, z: 0.009949915}
+  m_ConnectedAnchor: {x: 0.005338131, y: 0.001728754, z: 0.009949916}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1732,7 +1732,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.017, z: -0.001}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000010698932, y: 0.0007750691, z: -0.0035170026}
+  m_ConnectedAnchor: {x: 0.0000000010698924, y: 0.00077506865, z: -0.0035169988}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1817,7 +1817,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.008, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000009083215, y: 0.00026448356, z: 0.003503344}
+  m_ConnectedAnchor: {x: -0.0000000062455956, y: 0.00026448356, z: 0.003503346}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1975,7 +1975,7 @@ Transform:
   m_Children:
   - {fileID: 1638668998}
   m_Father: {fileID: 1857086193}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849062396
 GameObject:
@@ -2104,7 +2104,6 @@ Transform:
   m_LocalPosition: {x: -4.5129633, y: 7.310128, z: -1.4574623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 102879463759345434}
   - {fileID: 1802007525}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -2203,7 +2202,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.0035, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0003342668, y: -0.0022476066, z: 0.0004759659}
+  m_ConnectedAnchor: {x: -0.00033426532, y: -0.0022476017, z: 0.00047596323}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2620,122 +2619,3 @@ MonoBehaviour:
   leftThumbStickX: 0
   rightThumbStickY: 0
   rightThumbStickX: 0
---- !u!1 &102879463758981882
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 102879463759345434}
-  - component: {fileID: 102879463772644958}
-  m_Layer: 0
-  m_Name: Baby_Rig
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &102879463759345434
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102879463758981882}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.30006474, z: -0.67953223}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 1857086193}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &102879463772644958
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102879463758981882}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 722f64316a910af449d6bc8b7c0773fc, type: 3}
-  - {fileID: 2100002, guid: 722f64316a910af449d6bc8b7c0773fc, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: 722f64316a910af449d6bc8b7c0773fc, type: 3}
-  m_Bones:
-  - {fileID: 1638668998}
-  - {fileID: 224717360}
-  - {fileID: 124429818}
-  - {fileID: 1970043057}
-  - {fileID: 102879463759345430}
-  - {fileID: 1550555953}
-  - {fileID: 1067337536}
-  - {fileID: 393186159}
-  - {fileID: 1097553399}
-  - {fileID: 981250930}
-  - {fileID: 1462648950}
-  - {fileID: 970998574}
-  - {fileID: 1258858335}
-  - {fileID: 623032268}
-  - {fileID: 43073940}
-  - {fileID: 2002318263}
-  - {fileID: 1426234529}
-  - {fileID: 102879463759345428}
-  - {fileID: 1964878269}
-  - {fileID: 337087474}
-  - {fileID: 1849062397}
-  - {fileID: 1964921983}
-  - {fileID: 659549292}
-  - {fileID: 2065495035}
-  - {fileID: 743472227}
-  - {fileID: 1748667740}
-  - {fileID: 278813143}
-  - {fileID: 376896621}
-  - {fileID: 885710329}
-  - {fileID: 894847270}
-  - {fileID: 102879463759345426}
-  - {fileID: 2120972002}
-  - {fileID: 1727967045}
-  - {fileID: 1092562088}
-  - {fileID: 102879463759345424}
-  - {fileID: 1481406894}
-  - {fileID: 1299333356}
-  - {fileID: 1355406548}
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 1638668998}
-  m_AABB:
-    m_Center: {x: -0.0000000018626451, y: 0.007071728, z: -0.00005165022}
-    m_Extent: {x: 0.028080026, y: 0.03191503, z: 0.016556572}
-  m_DirtyAABB: 0

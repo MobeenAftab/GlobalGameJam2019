@@ -20,7 +20,7 @@ public class NoiseManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Noise.value += 0.5f;
+       // Noise.value += 0.5f;
     }
 
     public void UpdateNoise(float updateNoise)
