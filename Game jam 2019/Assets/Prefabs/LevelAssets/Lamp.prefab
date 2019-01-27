@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 3130164454073177470}
   - component: {fileID: 2132503721043651692}
   - component: {fileID: 4387584034884658136}
+  - component: {fileID: 2941796868763406635}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -211,6 +212,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2941796868763406635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702616719862198864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aceeb37ca27338540b7c80fcd853a0e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseM: {fileID: 0}
 --- !u!1 &7649622459170842266
 GameObject:
   m_ObjectHideFlags: 0

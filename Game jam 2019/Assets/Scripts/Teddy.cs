@@ -23,16 +23,16 @@ public class Teddy : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Player":
-                print("Teddy on Player");
+             //   print("Teddy on Player");
                 WinGame();
                 break;
             case "Finish":
                 // Teddy is in chest area
-                Debug.Log("Teddy in Chest, Finish");
+              //  Debug.Log("Teddy in Chest, Finish");
                 WinGame();
                 break;
             default:
-                Debug.Log("Teddy Collided with" + collision.gameObject.tag);
+              //  Debug.Log("Teddy Collided with" + collision.gameObject.tag);
                 break;
         }
     }
