@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
             if (moveX != 0 || moveY != 0)
             {
                 Vector3 movement = (mainBody.transform.right * moveX + 
-                    mainBody.transform.up * moveY).normalized * speed * Time.deltaTime;
+                    mainBody.transform.forward * moveY).normalized * speed * Time.deltaTime;
                 handRB.MovePosition(transform.position + movement);
             }
         }

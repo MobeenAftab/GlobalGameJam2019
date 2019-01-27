@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 3015017390823390201}
   m_Layer: 0
   m_Name: RHip
-  m_TagString: Untagged
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 1599228328793241668}
   m_Layer: 0
   m_Name: LShoulder
-  m_TagString: Untagged
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,9 +109,10 @@ GameObject:
   - component: {fileID: 9024350641328645246}
   - component: {fileID: 9024350641328645247}
   - component: {fileID: 9024350641328645216}
+  - component: {fileID: 2015726882363774562}
   m_Layer: 0
   m_Name: TedSkeleton
-  m_TagString: Untagged
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +161,7 @@ CharacterJoint:
   m_Anchor: {x: -0.005, y: 0.001, z: 0.004}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00016862198, y: -0.0011954238, z: 0.000018249702}
+  m_ConnectedAnchor: {x: -0.000168608, y: -0.0011954238, z: 0.000018249702}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -205,7 +206,7 @@ CharacterJoint:
   m_Anchor: {x: 0.005, y: 0.001, z: 0.004}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000018251356, y: -0.0011954247, z: -0.00016862107}
+  m_ConnectedAnchor: {x: 0.000018251356, y: -0.0011954247, z: -0.0001686071}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -250,7 +251,7 @@ CharacterJoint:
   m_Anchor: {x: -0.003, y: 0.001, z: -0.008}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00018503661, y: 0.00093657983, z: -0.0001686216}
+  m_ConnectedAnchor: {x: 0.00018503644, y: 0.00093658, z: -0.0001686074}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -295,7 +296,7 @@ CharacterJoint:
   m_Anchor: {x: 0.003, y: 0.001, z: -0.008}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0001850381, y: 0.0009365814, z: -0.00016862318}
+  m_ConnectedAnchor: {x: -0.00018503792, y: 0.0009365815, z: -0.00016860898}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -366,7 +367,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0.007}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 2.7862043e-10, y: -0.00014796459, z: 0.0011686189}
+  m_ConnectedAnchor: {x: 2.7861954e-10, y: -0.00014796552, z: 0.0011686152}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -400,6 +401,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &2015726882363774562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263015459320067138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c493f9d34515347beaa5dc7d573759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3687471772061643771
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,8 +484,8 @@ GameObject:
   - component: {fileID: 3338016752740222861}
   - component: {fileID: 4962933631995222466}
   m_Layer: 0
-  m_Name: SgtTed
-  m_TagString: Untagged
+  m_Name: SgtTed(Connor)
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -926,7 +939,7 @@ GameObject:
   - component: {fileID: 6364090748638698942}
   m_Layer: 0
   m_Name: LHip
-  m_TagString: Untagged
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,7 +970,7 @@ GameObject:
   - component: {fileID: 8468874959117354482}
   m_Layer: 0
   m_Name: Rshoulder
-  m_TagString: Untagged
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1051,7 +1064,7 @@ GameObject:
   - component: {fileID: 6400725002558026385}
   m_Layer: 0
   m_Name: Neck
-  m_TagString: Untagged
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1082,7 +1095,7 @@ GameObject:
   - component: {fileID: 1814777576464367269}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
