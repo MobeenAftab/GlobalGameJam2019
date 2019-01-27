@@ -21,6 +21,7 @@ public class NoiseManager : MonoBehaviour
     void Update()
     {
         //Noise.value += 0.5f;
+
     }
 
     public void UpdateNoise(float updateNoise)
