@@ -1,7 +1,14 @@
-﻿using System.Collections;
+﻿/*
+ * This class is a global object in the scene.
+ * Its purpose is for onjects that make a sound to update the current sound level and track it.
+ * if the noise gets too loud end the game
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NoiseManager : MonoBehaviour
 {
@@ -20,14 +27,24 @@ public class NoiseManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Noise.value += 0.5f;
-
+        // DO this in the update function
+        CheckNoiseLevel();
+        // UpdateNoise(10.0f); Testing purposes only
     }
 
     public void UpdateNoise(float updateNoise)
     {
         this.noiseLevel += updateNoise;
         Debug.Log("Noise Manager: " + noiseLevel);
+    }
+
+    private void CheckNoiseLevel()
+    {
+        if (noiseLevel > 100.0f)
+        {
+            Debug.Log("Noise Level Is To Highh!" + noiseLevel);
+            SceneManager.LoadScene(3);
+        }
     }
 
     IEnumerator LoseTime()

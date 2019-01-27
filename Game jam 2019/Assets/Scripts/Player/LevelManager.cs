@@ -10,23 +10,21 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    bool collisionsActive = true;
-    bool isTansitioning = false;
-    private float transitionDelay = 2.0f;
+    bool collisionsActive = true; // Collision detection to turn it on or off when transitioning scenes
+    bool isTansitioning = false; // Scene transition, disable controls when moving between scenes
+    private float transitionDelay = 2.0f; // Delay the scene transition
 
-    //Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        //rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // If player is moving
-        if (isTansitioning)
+        // If scene is changing ignore the following update method calls
+        if (!isTansitioning)
         {
 
         }
@@ -36,16 +34,16 @@ public class LevelManager : MonoBehaviour
     private void LevelComplete()
     {
         Debug.Log("Level Complete");
-        // Load next level
         Invoke("LoadNextLevel", transitionDelay);
     }
 
     private void PlayerDeath()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 
     /// <summary>
+    /// Invoked by LevelComplete(), Dont need this function, can invoke scene by build index
     /// Final scene in build order must be the win scene
     /// </summary>
     private void LoadNextLevel()
@@ -61,10 +59,14 @@ public class LevelManager : MonoBehaviour
         // Or main menu
         else
         {
+            // Default to main menu, maybe change to end game?
             LoadMainMenu();
         }
     }
 
+    /// <summary>
+    /// Load the main menu scene
+    /// </summary>
     private void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
@@ -72,25 +74,19 @@ public class LevelManager : MonoBehaviour
 
     private void EndGame()
     {
-        SceneManager.LoadScene("EndScene");
+        SceneManager.LoadScene(3);
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision);
-
-        // Check to see if teddy is moving
-        if (!collisionsActive)
-        {
-            return;
-        }
+        Debug.Log("LevelManager:" + collision);
 
         switch (collision.gameObject.tag)
         {
             case "Teddy":
                 print("Player on Teddy");
                 break;
-            case "Finish":
+            case "Finish": // Move this to teddy?
                 LevelComplete();
                 break;
             default:
