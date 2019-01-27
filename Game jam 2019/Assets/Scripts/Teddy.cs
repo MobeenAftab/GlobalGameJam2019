@@ -5,38 +5,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Teddy : MonoBehaviour
 {
-    bool collisionsActive = true;
-    bool isTansitioning = false;
-
-    // Start is called before the first frame update
-    void Start()
+  
+    private void WinGame()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // If Teddy is not moving
-        if (!isTansitioning)
-        {
-            // If not moving and collision with chest == win game
-           
-        }
+        SceneManager.LoadScene(2);
     }
 
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision);
-
-        // If teddy is stationary and not colliding with object exit function
-        if (isTansitioning || !collisionsActive)
-        {
-            return;
-        }
 
         // If stationary and collision == true
         switch (collision.gameObject.tag)
@@ -47,9 +28,10 @@ public class Teddy : MonoBehaviour
             case "Finish":
                 // Teddy is in chest area
                 Debug.Log("Teddy in Chest, Finish");
+                WinGame();
                 break;
             default:
-                Debug.Log("Teddy Default");
+                Debug.Log("Teddy Collided with" + collision.gameObject.tag);
                 break;
         }
     }

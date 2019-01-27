@@ -14,10 +14,8 @@ using UnityEngine.UI;
 public class NoiseSuperclass : MonoBehaviour
 {
     public float NoiseInc { get; set; } = 5.0f;
-    private bool isCollision = false;
 
-    public NoiseManager noiseM;
-   
+    public NoiseManager noiseM;   
 
     void Start()
     {
