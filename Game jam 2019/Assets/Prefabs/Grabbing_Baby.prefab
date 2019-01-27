@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3388124508651240291}
   m_Layer: 9
   m_Name: Hand_Right
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,7 +228,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3388124508729832166}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -261,7 +261,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.49999997, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.49999994, y: -1.2900007, z: 0}
+  m_ConnectedAnchor: {x: 0.49999994, y: -1.289993, z: -0.00000059604645}
   m_UseSpring: 1
   m_Spring:
     spring: 0
@@ -372,7 +372,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3388124508787740763}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -406,7 +406,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0400002, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.040014744, y: 0, z: -0.00000059604645}
   m_UseSpring: 1
   m_Spring:
     spring: 0
@@ -572,7 +572,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3388124509026832757}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -605,7 +605,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.49999997, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.49999994, y: -1.01, z: 0}
+  m_ConnectedAnchor: {x: 0.49999994, y: -1.0100062, z: -0.00000059604645}
   m_UseSpring: 1
   m_Spring:
     spring: 0
@@ -716,7 +716,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3388124510046415560}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -750,7 +750,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.100000024, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.09999633, y: 0, z: -0.00000059604645}
   m_UseSpring: 1
   m_Spring:
     spring: 0
@@ -2660,7 +2660,7 @@ GameObject:
   - component: {fileID: 3995050886897973561}
   m_Layer: 9
   m_Name: Hand_Left
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2731,7 +2731,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3995050886897973566}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2871,7 +2871,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5654069808240619602}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -2905,7 +2905,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.10000003, y: 0, z: -0.000000015628757}
+  m_ConnectedAnchor: {x: 0.099996164, y: 0, z: 0.0000007052149}
   m_UseSpring: 1
   m_Spring:
     spring: 5000
@@ -3016,7 +3016,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5654069808505991721}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3049,7 +3049,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.49999997, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.49999994, y: -1.0099998, z: 0.000000047963113}
+  m_ConnectedAnchor: {x: 0.49999994, y: -1.0099864, z: -0.0000043669716}
   m_UseSpring: 1
   m_Spring:
     spring: 5000
@@ -3160,7 +3160,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5654069808681883103}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3193,7 +3193,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.49999997, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.49999994, y: -1.2900002, z: -0.000000023283064}
+  m_ConnectedAnchor: {x: 0.49999994, y: -1.289995, z: 0.0000064997002}
   m_UseSpring: 1
   m_Spring:
     spring: 5000
@@ -3304,7 +3304,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5654069808723333695}
-  m_Material: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -3338,7 +3338,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0400002, y: 0, z: 0.000000013038516}
+  m_ConnectedAnchor: {x: 0.039999723, y: 0, z: -0.000006347429}
   m_UseSpring: 1
   m_Spring:
     spring: 5000
@@ -3466,7 +3466,7 @@ GameObject:
   - component: {fileID: 3388124509645730391}
   m_Layer: 9
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
