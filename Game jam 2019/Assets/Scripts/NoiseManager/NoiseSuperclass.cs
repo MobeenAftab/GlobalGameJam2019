@@ -19,16 +19,22 @@ public class NoiseSuperclass : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Make Noise SuperClass");
+        //Debug.Log("Make Noise SuperClass");
         noiseM = GameObject.Find("NoiseManager").GetComponent<NoiseManager>();
-        Debug.Log("YEYEY: " + noiseM.noiseLevel);
+        //Debug.Log("YEYEY: " + noiseM.noiseLevel);
     }
 
     public void OnCollisionEnter(Collision collision)
     {
-        noiseM.UpdateNoise(NoiseInc);
-        Debug.Log("NoiseTest" + collision + "\t" + collision.gameObject.tag);
-        Debug.Log("Collision Position: " + collision.transform.position);
+
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("AAAAAAAAAAAAAAAA");
+            noiseM.UpdateNoise(NoiseInc);
+            Debug.Log("NoiseTest" + collision + "\t" + collision.gameObject.tag);
+            Debug.Log("Collision Position: " + collision.transform.position);
+        }
+       
     }
 
     public void AddNoise(float NoiseInc)

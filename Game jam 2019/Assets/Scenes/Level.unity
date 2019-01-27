@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 77379588}
   - component: {fileID: 77379587}
   m_Layer: 0
-  m_Name: Gmanager
+  m_Name: NoiseManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -660,8 +660,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noiseLevel: 0
-  fun: {fileID: 0}
-  Noise: {fileID: 0}
+  fun: {fileID: 1592775362}
+  Noise: {fileID: 2003947919}
 --- !u!4 &77379588
 Transform:
   m_ObjectHideFlags: 0
@@ -15841,7 +15841,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 517263206}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 300
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -17183,6 +17183,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grabbing_Baby
       objectReference: {fileID: 0}
+    - target: {fileID: 6216018655727043425, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6216018655727043424, guid: 98112963a6429524eb6ebee71b973c2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17292,6 +17297,86 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13400000, guid: cd742a8a3021eb9428d36cfa47d63645,
         type: 2}
+    - target: {fileID: 6216018656709686791, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124510151780433, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124508819392181, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124510151780855, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124510151780437, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216018656221103340, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995050886897973566, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124508651240301, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124508729832166, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124508787740763, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124509026832757, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388124510046415560, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654069808240619602, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654069808505991721, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654069808681883103, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654069808723333695, guid: 98112963a6429524eb6ebee71b973c2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98112963a6429524eb6ebee71b973c2d, type: 3}
 --- !u!4 &1759385960 stripped
@@ -19279,7 +19364,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1462369162}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 300
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:

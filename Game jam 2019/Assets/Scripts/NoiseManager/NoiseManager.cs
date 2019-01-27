@@ -19,9 +19,10 @@ public class NoiseManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        Debug.Log("NoiseManager Awake");
+       // Debug.Log("NoiseManager Awake");
+        
         //StartCoroutine("LoseTime");
-        //fun.value = 1f;
+        fun.value = 1.0f;
     }
 
     // Update is called once per frame
@@ -29,6 +30,7 @@ public class NoiseManager : MonoBehaviour
     {
         // DO this in the update function
         CheckNoiseLevel();
+        fun.value = noiseLevel;
         // UpdateNoise(10.0f); Testing purposes only
     }
 
@@ -40,7 +42,7 @@ public class NoiseManager : MonoBehaviour
 
     private void CheckNoiseLevel()
     {
-        if (noiseLevel > 100.0f)
+        if (noiseLevel > 300.0f)
         {
             Debug.Log("Noise Level Is To Highh!" + noiseLevel);
             SceneManager.LoadScene(3);
