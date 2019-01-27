@@ -24,8 +24,6 @@ public class NoiseSuperclass : MonoBehaviour
         Debug.Log("Make Noise SuperClass");
         noiseM = GameObject.Find("NoiseManager").GetComponent<NoiseManager>();
         Debug.Log("YEYEY: " + noiseM.noiseLevel);
-      
-        
     }
 
     public void OnCollisionEnter(Collision collision)

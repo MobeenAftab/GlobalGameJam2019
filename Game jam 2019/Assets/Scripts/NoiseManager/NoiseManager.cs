@@ -13,14 +13,15 @@ public class NoiseManager : MonoBehaviour
     void Awake()
     {
         Debug.Log("NoiseManager Awake");
-        StartCoroutine("LoseTime");
-        fun.value = 1f;
+        //StartCoroutine("LoseTime");
+        //fun.value = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
-       // Noise.value += 0.5f;
+        //Noise.value += 0.5f;
+
     }
 
     public void UpdateNoise(float updateNoise)
