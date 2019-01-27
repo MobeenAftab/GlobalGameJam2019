@@ -12,19 +12,19 @@ using UnityEngine.SceneManagement;
 
 public class NoiseManager : MonoBehaviour
 {
-    public float noiseLevel = 0.0f;
-    public Slider fun;
-    public Slider Noise;
-    private float max = 300;
+    public float noiseLevel; // = 0.0f;
+    public Slider NoiseSlider;
+   // public Slider Noise;
+    private float max = 100;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-       // Debug.Log("NoiseManager Awake");
-        
+        // Debug.Log("NoiseManager Awake");
+        Debug.Log(gameObject);
         //StartCoroutine("LoseTime");
-        fun.value = 1.0f;
-        fun.maxValue = max;
+        NoiseSlider.value = 1.0f;
+        NoiseSlider.maxValue = max;
     }
 
     // Update is called once per frame
@@ -32,7 +32,9 @@ public class NoiseManager : MonoBehaviour
     {
         // DO this in the update function
         CheckNoiseLevel();
-        fun.value = noiseLevel;
+        
+        //NoiseSlider.value = noiseLevel;
+       // Debug.Log("Fun" + noiseLevel);
         // UpdateNoise(10.0f); Testing purposes only
     }
 
@@ -51,7 +53,7 @@ public class NoiseManager : MonoBehaviour
         }
     }
 
-    IEnumerator LoseTime()
+   /* IEnumerator LoseTime()
     {
         while (true)
         {
@@ -60,5 +62,5 @@ public class NoiseManager : MonoBehaviour
             Debug.Log(fun.value);
             Noise.value -= 0.7f;
         }
-    }
+    }*/
 }
