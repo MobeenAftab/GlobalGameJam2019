@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using XInputDotNetPure; // Required in C#
+using UnityEngine.SceneManagement;
 
 
 public class Controls : MonoBehaviour
@@ -108,6 +109,11 @@ public class Controls : MonoBehaviour
 
             rightThumbStickY = state.ThumbSticks.Right.Y;
             rightThumbStickX = state.ThumbSticks.Right.X;
+        }
+
+        if (prevState.Buttons.Start == ButtonState.Released && state.Buttons.Start == ButtonState.Pressed)
+        {
+            SceneManager.LoadScene(1);
         }
 
     }
